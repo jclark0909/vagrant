@@ -43,37 +43,37 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
 
+###Deploying a vagrant box
+
+mkdir testbox1
+cd testbox1
+vagrant init jasonc/centos7
+vagrant up
+
+### Pausing a vagrant box 
+
+Vagrant halt
+
+### Shutting down a vagant box 
+
+vagrant destroy
+
+### SSH into a vagrant box(if headless)
+
+vagrant ssh
+
+### Check status of Vagrant box
+
+vagrant status
 
 ## Contributing
 
 Please read [README.md](https://github.com/jclark0909/vagrant) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
 
 ## Authors
 
@@ -89,3 +89,68 @@ First Script
 -Reports if account creation failed
 
 ### Getting started with Shell scripting :Naming, Permissions, Variables, Buildins
+
+Create a file in linux machine
+cd /vagrant
+vim luser-demo01.sh
+
+Save and exit VIM
+:wq
+Please note I recommend editing the file in the code editor and saving it there opposed to editing it in VIM on remote machine!
+
+SheBang
+# = She
+! = Bang
+#! = SheBang
+
+SheBang represents the directory for which the scripts you want to run exsist. Also, the #!/bin/bash is the interpreter that you want the script to run in for example:
+
+#!/bin/bash = shell script
+#!/bin/ruby = ruby script 
+#!/bin/python = python script
+
+# = commenting in shell script
+
+### Permissions in a shell script 
+
+-r = read 
+-w = write
+-e = execute
+
+-rw- = Permissions to owner of the file 
+-rw-r-- = Permissions granted to the group of the file
+-rw-r--r-- = Perissions to everyone else on the system
+
+-rw-r--r-- vagrant(user) vagrant(group) 12 jul 20 11:11(date and time) luser-demo01.sh(file)
+
+### Adding execute permissions to file
+
+chmod 755 luser-demo01.sh
+
+755 = Applying execute permission command 
+r = 4 
+w = 2 
+e = 1
+
+List permission set 
+
+ls -l
+
+### Executing a shell script 
+./luser-demo01.sh = reletive to your current dir
+or
+/vagrant/luser-demo01.sh = specify the entire dir
+
+### Rename a file 
+vm luser-demo01.sh jared
+./jared
+
+### Creating empty file
+
+touch blah.sh
+
+### Getting help on a built-in function 
+
+Echo help
+or 
+echo help | less
