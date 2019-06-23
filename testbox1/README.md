@@ -81,9 +81,11 @@ Please read [README.md](https://github.com/jclark0909/vagrant) for details on ou
 
 ## Notes
 
-Shell scripting tutorial 
+### Shell scripting tutorial 
 
 First Script
 -Creates new accounts 
 -Checks for proper privileges
 -Reports if account creation failed
+
+### Getting started with Shell scripting :Naming, Permissions, Variables, Buildins
