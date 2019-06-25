@@ -35,20 +35,15 @@ Say what the step will be
 Give the example
 ```
 
-And repeat
-
-```
-until finished
-```
 
 End with an example of getting some data out of the system or using it for a little demo
 
 
-## Deployment
+### Deployment
 
 Add additional notes about how to deploy this on a live system
 
-###Deploying a vagrant box
+### Deploying a vagrant box
 
 mkdir testbox1
 cd testbox1
@@ -71,15 +66,15 @@ vagrant ssh
 
 vagrant status
 
-## Contributing
+### Contributing
 
 Please read [README.md](https://github.com/jclark0909/vagrant) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Authors
+### Authors
 
 * **Jared Clark** - *Initial work* - [GitHubAccount](https://github.com/jclark0909)
 
-## Notes
+### Notes
 
 ### Shell scripting tutorial 
 
